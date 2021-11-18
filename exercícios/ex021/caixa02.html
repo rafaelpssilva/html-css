@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        /* Body */
+
+        body {
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #c4eaf29a;
+        }
+
+        /* Header, Nav */
+
+        header {
+            background-color: #aeced4;
+            margin: 10px 5px;
+            padding: 5px 10px;
+            border: 5px solid;
+        }
+
+        header > h1 {
+            text-align: center;
+        }
+
+        nav {
+            text-align: center;
+            padding: 3px;
+            border: 3px solid;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.185);
+        }
+
+        nav > a {
+            font-size: 1.2em;
+            text-decoration: none;
+            color: white;
+            margin: 20px;
+        }
+        
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        /* main */
+        
+        main {
+            border-radius: 10px 0px;
+            margin: 10px;
+            padding: 10px;
+            background-color: white;
+        }
+
+        /* Universal */
+
+        #primario, #secundario {
+            background-color: #BADEE6;
+            margin: 12px 5px;
+            padding: 1px 10px;
+            text-align: justify;
+        }
+
+        /* Primario */
+
+        #primario > article > h2 {
+            text-align: center;
+        }
+
+        #primario > article > p {
+            font-size: 1.09em;
+            text-indent: 20px;
+        }
+
+        #primario > article > aside {
+            text-align: right;
+            color: white;
+            background-color: #536266;
+        }
+
+        /* Secundario */
+
+        #secundario > article > h2 {
+            text-align: center;
+        }
+
+        #secundario > article > p {
+            font-size: 1.09em;
+            text-indent: 20px;
+        }
+
+        #secundario > article > aside {
+            text-align: right;
+            color: white;
+            background-color: #536266;
+        }
+
+        /* footer */
+
+        footer {
+            width: auto;
+            height: auto;
+            padding: 4px;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="primario">
+             <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat accusamus ducimus nostrum facere illo et eveniet eaque autem ab. Sunt obcaecati nisi beatae numquam deserunt tempora nesciunt modi veritatis tempore!
+                </p>
+                <aside>
+                    <p id="nome_escritor_artigo">Artigo escrito por Rafael Pereira</p>
+                </aside>
+             </article>
+        </section>
+        <section id="secundario">
+            <article>
+                <h2>Notícias sobre o Estados Unidos</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias laudantium fugit nam reprehenderit optio dolorum similique doloremque placeat deserunt saepe praesentium, porro ducimus neque aut, voluptas, facere aliquid? Totam, rerum.
+                </p>
+                <aside>
+                    <p>Artigo escrito por Rafael Pereira</p>
+                </aside>
+             </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Rafael</p>
+    </footer>
+</body>
+</html>
